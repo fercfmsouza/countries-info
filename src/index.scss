@@ -1,0 +1,41 @@
+@import './styles/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: $font-family;
+  background-color: $veryLightGray;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+}
+
+button {
+  box-sizing: border-box;
+  border: none;
+}

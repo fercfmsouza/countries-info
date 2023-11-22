@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+//light mode styles
+#light {
+  body {
+    background-color: $veryLightGray;
+  }
+
+  .text {
+    color: $veryDarkBlueTx;
+  }
+
+  .background {
+    background-color: $veryLightGray;
+  }
+
+  .element {
+    background-color: $white;
+  }
+
+  .input {
+    background-color: $darkGray;
+  }
+}
+
+//dark mode styles
+#dark {
+  body {
+    background-color: $veryDarkBlueBg;
+  }
+
+  .text {
+    color: $white;
+  }
+
+  .background {
+    background-color: $veryDarkBlueBg;
+  }
+
+  .element {
+    background-color: $darkBlue;
+  }
+
+  .options {
+    li {
+      &:hover {
+        background-color: $veryDarkBlueBg;
+      }
+    }
+  }
+}

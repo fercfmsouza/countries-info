@@ -1,0 +1,121 @@
+@import '../styles/variables.scss';
+
+.country-details {
+  display: flex;
+  padding: $container-padding;
+  padding-top: 28px;
+
+  .country-content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-bottom: 100px;
+
+    .back-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      width: 200px;
+      padding: 20px 60px;
+      background-color: $white;
+      border-radius: 6px;
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 20px;
+        height: 15px;
+      }
+    }
+
+    .country-img {
+      width: 600px;
+      height: 400px;
+      margin-top: 60px;
+      border-radius: 8px;
+    }
+
+    .country-info {
+      font-family: $font-family-2;
+      margin-top: 120px;
+
+      h2 {
+        padding-bottom: 30px;
+        font-weight: $font-weight-800;
+      }
+
+      p {
+        padding-bottom: 10px;
+      }
+
+      span {
+        font-weight: $font-weight-600;
+      }
+
+      .country-info-1 {
+        display: flex;
+        width: max-content;
+        gap: 40px;
+      }
+
+      .country-border {
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+
+        .borders {
+          color: $darkGray;
+          background-color: $white;
+          padding: 4px 20px;
+          background-color: $white;
+          border-radius: 6px;
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+
+          &:hover {
+            background-color: green;
+            color: red;
+          }
+        }
+
+        .no-borders {
+          color: $darkGray;
+          background-color: $white;
+          padding: 4px 20px;
+          background-color: $white;
+          border-radius: 6px;
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .country-details {
+    .country-content {
+      flex-direction: column;
+      width: 100%;
+      gap: 30px;
+      align-items: normal;
+
+      .country-img {
+        width: 100%;
+        height: 300px;
+        margin-top: 30px;
+      }
+
+      .country-info {
+        margin-top: 0px;
+
+        .country-info-1 {
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}

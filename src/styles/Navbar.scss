@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+.navbar {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+  padding: $container-padding;
+  padding-bottom: 28px;
+  padding-top: 28px;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-weight: $font-weight-800;
+  }
+
+  img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .nav-mode {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background-color: $white;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    img {
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
